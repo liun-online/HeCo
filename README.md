@@ -20,5 +20,19 @@ Here, "acm" can be replaced by "dblp", "aminer" or "freebase".
 2. In ./code/utils/params.py, except "lr" and "patience", meticulously tuning dropout and tau is applaudable.
 3. In our experiments, we only assign target type of nodes with original features, but assign other type of nodes with one-hot. This is because most of datasets used only provide features of target nodes in their original version. So, we believe in that if high-quality features of other type of nodes are provided, the overall results will improve a lot. The AMiner dataset is an example. In this dataset, there are not original features, so every type of nodes are all asigned with one-hot. In other words, every node has the same quality of features, and in this case, our HeCo is far ahead of other baselines. So, we strongly suggest that if you have high-quality features for other type of nodes, try it!
 ## Cite
+```
+@inproceedings{heco,
+  author    = {Xiao Wang and
+               Nian Liu and
+               Hui Han and
+               Chuan Shi},
+  title     = {Self-supervised Heterogeneous Graph Neural Network with Co-contrastive
+               Learning},
+  booktitle = {{KDD} '21: The 27th {ACM} {SIGKDD} Conference on Knowledge Discovery
+               and Data Mining, Virtual Event, Singapore, August 14-18, 2021},
+  pages     = {1726--1736},
+  year      = {2021}
+}
+```
 ## Contact
 If you have any questions, please feel free to contact me with nianliu@bupt.edu.cn
